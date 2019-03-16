@@ -71,7 +71,6 @@ pre code.hljs {
 }
 
 .site-header-container, .post-header-container {
-	height: 700px;
 	width: 100%;
 	text-align: center;
 	&.has-cover {
@@ -87,7 +86,6 @@ pre code.hljs {
 		}
 	}
 	.scrim {
-		height: 700px;
 		padding: 3em 1em;
 		&.has-cover {
 			background-color: rgba(0,0,0,0.2);

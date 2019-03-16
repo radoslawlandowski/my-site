@@ -29,9 +29,13 @@ layout: default
   </div>
 </section>
 
-<div>
-  <img src="{{ site.baseurl }}/post-pic.jpg" alt="{{ site.title }}">
-</div>
+{% for image in site.static_files %}
+    {% if image.path contains page.picturesfolder %}
+        <img style="margin-bottom: 10px;" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
+{% endfor %}
+
+{% include youtubePlayer.html id=page.youtubeId %}
 
 <article class="post-content">
   {{ content }}

@@ -19,6 +19,9 @@ layout: default
     <h2>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
+    <div>
+      <img style="width:40%" src="{{ site.baseurl }}/{{ post.mainpicture }}" alt="{{ site.title }}">
+    </div>
     <section class="post-excerpt" itemprop="description">
       <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
     </section>
