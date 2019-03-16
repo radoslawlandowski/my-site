@@ -3,10 +3,10 @@ layout: post
 title:  "Bifold card holder"
 date:   2015-04-18 08:43:59
 author: Radosław Landowski
-categories: card holders
+categories: cardholders
 tags: lorem
-mainpicture: 'IMG_20190311_155725'
-picturesfolder: 'bifold-card-holder'
+mainpicture: 'IMG_20190311_155725.jpg'
+picturesfolder: '/bifold-card-holder/'
 youtubeId: '2xRd6WM_taM'
 ---
 
