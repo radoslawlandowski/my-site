@@ -1,0 +1,41 @@
+<div class="customisation-option">
+    <div class="row">
+        {% for i in (1..include.pictureCount) %}
+            <div class="column-of-{{include.pictureCount}}">
+                <a href="{{include.base_path}}/{{include.name}}-{{i | minus: 1}}.jpg" data-lightbox="{{include.name}}">
+                    <img src="{{include.base_path}}/{{include.name}}-{{i | minus: 1}}.jpg" style="width:100%"></a>
+            </div> 
+        {% endfor %}
+    </div>
+    <div class="caption">Leather colour: {{include.leather}} | Thread: {{include.thread}}| Edge finish: {{include.edge}}</div>
+</div>
+
+<style>
+.row {
+    display: flex;
+}
+
+.column-of-3 {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.column-of-2 {
+    flex: 50.0%;
+    padding: 5px;
+}
+
+.column-of-1 {
+    flex: 100.0%;
+    padding: 5px;
+}
+
+.customisation-option {
+    margin-bottom: 30px;
+}
+
+.caption {
+    text-align: center; 
+    font-size: small;
+}
+</style>

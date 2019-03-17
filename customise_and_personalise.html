@@ -9,17 +9,7 @@ permalink: /customise-personalise/
 <div>
   <div>Owning leather goods is amazing, but owning leather goods that are personalised exclusively for you is even better. Look at the example pictures description to figure out the name of the thread or edge finish method that’s been applied. Just pick the configuration you like the most or make your own out of options that are available and I will make it for you!</div>
 
-  <div class="customisation-option">
-      <div class="row">
-          <div class="column-of-2">
-            <img src="{{base_path}}/tan-radiant-yellow-saddle-tan-edge-paint-1.jpg" style="width:100%">
-          </div> 
-          <div class="column-of-2">
-              <img src="{{base_path}}/tan-radiant-yellow-saddle-tan-edge-paint.jpg" style="width:100%">
-          </div> 
-      </div>
-      <div class="caption">Leather colour: Tan | Thread: Radiant Yellow | Edge finish: Tan Edge Paint</div>
-  </div>
+  {% include customisation_option.html leather="Tan" thread="Radiant Yellow" edge="Tan Edge Paint" name="tan-radiant-yellow-saddle-tan-edge-paint" pictureCount=2 base_path=base_path  %}
 
   {% include page_divider.html %}
 
@@ -132,7 +122,8 @@ permalink: /customise-personalise/
   <div class="customisation-option">
       <div class="row">
           <div class="column-of-1">
-            <img src="{{base_path}}/tan-radiant-yellow-hot-waxed.jpg" style="width:100%">
+            <a href="{{base_path}}/tan-radiant-yellow-hot-waxed.jpg" data-lightbox="roadtrip">
+              <img src="{{base_path}}/tan-radiant-yellow-hot-waxed.jpg" style="width:100%"></a>
           </div> 
       </div>
       <div class="caption">Leather colour: Tan | Thread: Radiant Yellow | Edge finish: Hot-waxed</div>
