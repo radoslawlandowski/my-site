@@ -9,9 +9,9 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Elende Leatherworks
+title: Elense Leatherworks
 subtitle: "Handcrafted leather goods"
-email: elende.leatherworks@gmail.com
+email: elense.leatherworks@gmail.com
 name: Radosław Landowski
 description: >
   A simple yet classy theme for your Jekyll website or blog.
@@ -74,15 +74,15 @@ social:
 
   - name: Instagram
     icon: instagram
-    username: rdk_lnd
-    url: https://www.instagram.com/rdk_lnd/
+    username: elenseleatherworks
+    url: https://www.instagram.com/elenseleatherworks/
     desc: Follow me on Instagram
     share: true
 
   - name: YouTube
     icon: youtube
-    username: Elende Leatherworks
-    url: https://www.youtube.com/channel/UCe71CA-AjWkcvf3gvDeM1cw
+    username: Elense Leatherworks
+    url: https://www.youtube.com/channel/UC7sVLaXADHzZssr9YeGTLQA
     desc: Subscribe on YouTube
     share: true
 
