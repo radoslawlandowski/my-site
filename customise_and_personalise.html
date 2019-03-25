@@ -9,6 +9,42 @@ permalink: /customise-personalise/
 <div>
   <div>Owning leather goods is amazing, but owning leather goods that are personalised exclusively for you is even better. Look at the example pictures description to figure out the name of the thread or edge finish method that’s been applied. Just pick the configuration you like the most or make your own out of options that are available and I will make it for you!</div>
 
+  <div>I offer you the ability to make a decision on the following parameters</div>
+
+  <h2 style="margin-top:2em">Edge finish</h2>
+  <div>
+      Choosing a proper edge finish is one of the most important step in personalisation because it affects the looks as well as the durability and overall character of the item.
+  </div>
+  <ul>
+    {% assign burnished_edge_description = "Burnished – The traditional method of finishing edges. Makes the edges have the color of the face side of leather with thin darker lines between sheets of leather. Not the most durable or elegant, but definitely close to nature." %}
+    <li class="thread-option">{% include edge_option.html name=burnished_edge_description path="/edges/burnish-0.jpg" basePath=base_path %}</li>
+
+    {% assign hot_waxed_edge_description = "Hot-waxed – Another traditional method of finishing edges known for years. Beeswax is applied to the edges and heated up which makes it penetrate the leather where it solidifies and provides strength, water resistance and beautiful color, varying from light brown, through ruby down to brown. Great choice for people how like to feel the traditional touch in their pieces, very durable." %}
+    <li class="thread-option">{% include edge_option.html name=hot_waxed_edge_description path="/edges/hot-waxed-0.jpg" basePath=base_path %}</li>
+    
+    {% assign painted_edge_description = "Painted – A technique which is about applying a special, elastic paint to the edge that covers the leather flesh and exposes only a beautiful, consistent, slightly shiny surface. Adds a bit of elegance to your item, very durable." %}
+    <li class="thread-option">{% include edge_option.html name=painted_edge_description path="/edges/saddle-tan-fiebings-paint-0.jpg" basePath=base_path %}</li>
+  </ul>
+  <h2>Thread colour</h2>
+  <div>
+      Well matched thread colour can compliment the edge finish and result in a proper ‘Wow-effect’. I can offer you the following colours at the moment:
+  </div>
+  <ul>
+    <li class="thread-option">{% include thread_option.html name="Radiant Yellow" path="/threads/radiant-yellow-0.jpg" basePath=base_path %}</li>
+    <li class="thread-option">{% include thread_option.html name="Angora" path="/threads/angora-0.jpg" basePath=base_path %}</li>
+    <li class="thread-option">{% include thread_option.html name="Golden Ochre" path="/threads/golden-ochre-0.jpg" basePath=base_path %}</li>
+    <li class="thread-option">{% include thread_option.html name="Ginger Bread" path="/threads/ginger-bread-0.jpg" basePath=base_path %}</li>
+    <li class="thread-option">{% include thread_option.html name="Carmine Rose" path="/threads/carmine-rose-0.jpg" basePath=base_path %}</li>
+    <li class="thread-option">{% include thread_option.html name="Salmon Rose" path="/threads/salmon-rose-0.jpg" basePath=base_path %}</li>
+  </ul>
+  <h2>Leather colour</h2>
+  <ul>
+    <li>Tan – Natural, undyed leather. Provides the best softness, smell and feel to the leather.</li>
+    <li>Hand dyed Light Brown – Because of the hand dyeing the leather looses some of its softness, smell and feel. I’d higly recommend dyeing only the outer shell of the piece to maintain balance between coloristic needs and feeling.</li>
+  </ul>
+
+  <h2>Example configurations</h2>
+
   {% include customisation_option.html 
     leather="Tan" 
     thread="Radiant Yellow" 
@@ -108,50 +144,18 @@ permalink: /customise-personalise/
     base_path=base_path  %}
 
   {% include page_divider.html %}  
-
-  <div>I offer you the ability to make a decision on these parameters:</div>
-  <ul>
-    <li>
-      <div>Edge finish</div>
-      <ul>
-          <li>Burnished</li>
-          <li>Hot-waxed</li>
-          <li>Painted (with some small restrictions)</li>
-      </ul>
-    </li>
-    <li>Thread colour</li>
-    <li>Leather colour</li>
-  </ul>
-
-  <h2>Edge finish</h2>
-  <div>
-      Choosing a proper edge finish is one of the most important step in personalisation because it affects the looks as well as the durability and overall character of the item.
-  </div>
-  <ul>
-    <li>Burnished – The traditional method of finishing edges. Makes the edges have the color of the face side of leather with thin darker lines between sheets of leather. Not the most durable or elegant, but definitely close to nature.</li>
-    <li>Hot-waxed – Another traditional method of finishing edges known for years. Beeswax is applied to the edges and heated up which makes it penetrate the leather where it solidifies and provides strength, water resistance and beautiful color, varying from light brown, through ruby down to brown. Great choice for people how like to feel the traditional touch in their pieces, very durable.</li>
-    <li>Painted – Relatively modern technique which is about applying a special, elastic paint to the edge that covers the leather flesh and exposes only a beautiful, consistent, slightly shiny surface. Adds a bit of elegance to your item, very durable.</li>
-  </ul>
-  <h2>Thread colour</h2>
-  <div>
-      Well matched thread colour can compliment the edge finish and result in a proper ‘Wow-effect’. I can offer you the following colours at the moment:
-  </div>
-  <ul>
-    <li>Radiant Yellow</li>
-    <li>Angora</li>
-    <li>Golden Ochre</li>
-    <li>Ginger Bread</li>
-    <li>Carmine Rose</li>
-    <li>Salmon Rose</li>
-  </ul>
-  <h2>Leather colour</h2>
-  <ul>
-    <li>Tan – Natural, undyed leather. Provides the best softness, smell and feel to the leather.</li>
-    <li>Hand dyed Light Brown – Because of the hand dyeing the leather looses some of its softness, smell and feel. I’d higly recommend dyeing only the outer shell of the piece to maintain balance between coloristic needs and feeling.</li>
-  </ul>
 </div>
 
 <style>
+
+  img {
+    border-radius: 5px;
+  }
+
+  .thread-option {
+    margin-bottom: 2em
+  }
+
   .row {
     display: flex;
   }
@@ -178,5 +182,9 @@ permalink: /customise-personalise/
   .caption {
     text-align: center; 
     font-size: small;
+  }
+
+  .thread-example {
+    max-width:70%
   }
 </style>

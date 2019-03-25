@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="column-of-2">
+    <span class="edge-name">{{include.name}}</span>
+    </div> 
+    <div class="column-of-2">
+    <a href="{{include.basePath}}/{{include.path}}" data-lightbox="{{include.name}}--lightbox">
+        <img class="thread-example" src="{{include.basePath}}/{{include.path}}"></a>
+    </div> 
+</div>
+
+<style>
+    .edge-name {
+        font-style: italic
+    }
+</style>
