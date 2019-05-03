@@ -20,7 +20,7 @@ layout: default
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
     <div>
-      <img style="width:40%" src="{{ site.baseurl }}/assets{{ post.picturesfolder }}{{ post.mainpicture }}" alt="{{ site.title }}">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img style="width:40%" src="{{ site.baseurl }}/assets{{ post.picturesfolder }}{{ post.mainpicture }}" alt="{{ site.title }}"></a>
     </div>
     <section class="post-excerpt" itemprop="description">
       <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
